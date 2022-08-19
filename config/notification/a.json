@@ -1,0 +1,26 @@
+{
+"Urls":  "http://localhost:9094/",
+  "ProjectConfiguration": {
+    "ApiName": "NotificationServer.WebAPI",
+    "ApiVersion": "v1.0",
+    "IdentityServerBaseUrl": "https://videobanking-auth.machbank.com/sts",
+    "OidcSwaggerUIClientId": "NotificationServerSwaggerClient",
+    "OidcApiName": "NotificationServer.WebAPI",
+    "CorsAllowAnyOrigin": true,
+    "CorsAllowOrigins": [],
+    "ApiBaseUrl": "https://videobanking-auth.machbank.com/notification",
+    "ClientUrl": "https://videobanking-auth.machbank.com/notification"
+  },
+  "ConnectionStrings": {
+    "DefaultConnection": "Host=Server=${SERVER_URL};Database=notificationserverdb;Port=${POSTGRES_DB_PORT};User Id=${POSTGRES_DB_USERNAME};Password=${POSTGRES_DB_PASSWORD};",
+    "HangFireConnection": "Host=Server=${SERVER_URL};Database=notificationserverjobsdb;Port=${POSTGRES_DB_PORT};User Id=${POSTGRES_DB_USERNAME};Password=${POSTGRES_DB_PASSWORD}"
+  },
+  "Logging": {
+    "LogLevel": {
+      "Default": "Information",
+      "Microsoft": "Warning",
+      "Microsoft.Hosting.Lifetime": "Information"
+    }
+  },
+  "AllowedHosts": "*"
+}
