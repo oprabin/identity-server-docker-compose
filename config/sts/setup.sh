@@ -79,5 +79,6 @@ config='
 
 
 '
-touch appsettings.json
-echo $config > appsettings.json
+
+echo ${PWD}
+echo $config > ${PWD}/config/sts/appsettings.json

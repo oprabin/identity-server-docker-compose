@@ -1,44 +1,44 @@
 version: '3'
 services:
-  # identity-admin:
-  #   image: devilankit/identity-admin1:mbl3
-  #   ports: 
-  #     - 9091:9091
-  #   volumes: 
-  #     - ./config/admin/appsettings.json:/app/appsettings.json
-  #   command: /bin/sh -c "./admin/setup.sh"
+  identity-admin:
+    image: devilankit/identity-admin1:mbl3
+    command: /bin/sh -c "./config/admin/setup.sh"
+    ports: 
+      - 9091:9091
+    volumes: 
+      - ${PWD}/config/admin/appsettings.json:/app/appsettings.json
 
-  #   depends_on:
-  #     - identity-sts
+    depends_on:
+      - identity-sts
 
-  # identity-api:
-  #   image: devilankit/identity-api1:mbl3
-  #   ports: 
-  #     - 9092:9092
-  #   volumes: 
-  #     - ./config/api/appsettings.json:/app/appsettings.json
-  #   command: /bin/sh -c "./api/setup.sh"
+  identity-api:
+    image: devilankit/identity-api1:mbl3
+    ports: 
+      - 9092:9092
+    volumes: 
+      - ${PWD}/config/api/appsettings.json:/app/appsettings.json
+    command: /bin/sh -c "./config/api/setup.sh"
 
-  #   depends_on:
-  #     - identity-sts
+    depends_on:
+      - identity-sts
 
   identity-sts:
     image: devilankit/identity-sts1:mbl3
+    command: /bin/sh -c "./config/sts/setup.sh"
     ports: 
       - 9093:9093
-    command: /bin/sh -c "./config/sts/setup.sh"
     volumes: 
-      - ./config/sts/appsettings.json:/app/appsettings.json
+      - ${PWD}/config/sts/appsettings.json:/app/appsettings.json
 
-  # identity-notification:
-  #   image: devilankit/identity-notification1:mbl3
-  #   ports: 
-  #     - 9094:9092
-  #   volumes: 
-  #     - ./config/notification/appsettings.json:/app/appsettings.json
-  #   depends_on:
-  #     - identity-sts
-  #   command: /bin/sh -c "./notification/setup.sh"
+  identity-notification:
+    image: devilankit/identity-notification1:mbl3
+    ports: 
+      - 9094:9092
+    volumes:
+      - ${PWD}/config/notification/appsettings.json:/app/appsettings.json
+    command: /bin/sh -c "./config/notification/setup.sh"
+    depends_on:
+      - identity-sts
 
-#volumes:
+
     

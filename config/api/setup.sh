@@ -9,8 +9,6 @@ IdentityAdminRedirectUri=https://videobanking-auth.machbank.com
 
 
 config='{
-{
-
   "Urls":  "http://localhost:9092/",
   "PATHBASE": "",
   "ConnectionStrings": {
@@ -58,4 +56,4 @@ config='{
 
 '
 
-echo $config > appsettings.json
+echo $config > ${PWD}/config/api/appsettings.json

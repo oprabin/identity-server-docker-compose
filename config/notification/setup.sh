@@ -36,5 +36,5 @@ config='{
 }
 
 '
-touch appsettings.json
-echo $config > appsettings.json
+
+echo $config > ${PWD}/config/notification/appsettings.json

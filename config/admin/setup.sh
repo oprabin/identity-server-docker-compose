@@ -56,4 +56,4 @@ config='{
 }
 '
 
-echo $config > appsettings.json
+echo $config > ${PWD}/config/admin/appsettings.json
