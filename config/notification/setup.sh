@@ -22,8 +22,8 @@ config='{
     "ClientUrl": "'${IdentityAdminRedirectUri}'/notification"
   },
   "ConnectionStrings": {
-    "DefaultConnection": "Host=Server='${SERVER_URL}';Database=notificationserverdb;Port='${POSTGRES_DB_PORT}';User Id='${POSTGRES_DB_USERNAME}';Password='${POSTGRES_DB_PASSWORD}';",
-    "HangFireConnection": "Host=Server='${SERVER_URL}';Database=notificationserverjobsdb;Port='${POSTGRES_DB_PORT}';User Id='${POSTGRES_DB_USERNAME}';Password='${POSTGRES_DB_PASSWORD}'"
+    "DefaultConnection": "Server='${SERVER_URL}';Database=notificationserverdb;Port='${POSTGRES_DB_PORT}';User Id='${POSTGRES_DB_USERNAME}';Password='${POSTGRES_DB_PASSWORD}';",
+    "HangFireConnection": "Server='${SERVER_URL}';Database=notificationserverjobsdb;Port='${POSTGRES_DB_PORT}';User Id='${POSTGRES_DB_USERNAME}';Password='${POSTGRES_DB_PASSWORD}';"
   },
   "Logging": {
     "LogLevel": {
