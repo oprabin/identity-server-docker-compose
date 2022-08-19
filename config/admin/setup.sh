@@ -1,13 +1,5 @@
 #!/bin/sh
 
-
-SERVER_URL=192.168.102.253
-POSTGRES_DB_USERNAME=postgres
-POSTGRES_DB_PORT=5432
-POSTGRES_DB_PASSWORD=root
-IdentityAdminRedirectUri=https://videobanking-auth.machbank.com
-
-
 config='{
 
   "Urls":  "http://localhost:9091/",
@@ -25,7 +17,7 @@ config='{
   "AdminConfiguration": {
     "PageTitle": "DCT Admin",
     "FaviconUri": "/favicon.ico",
-    "IdentityAdminRedirectUri": "'${IdentityAdminRedirectUri}'/signin-oidc",
+    "IdentityAdminRedirectUri": "'${IdentityAdminRedirectUri}'/admin/signin-oidc",
     "IdentityServerBaseUrl": "'${IdentityAdminRedirectUri}'/sts",
     "IdentityAdminCookieName": "IdentityServerAdmin",
     "IdentityAdminCookieExpiresUtcHours": 12,

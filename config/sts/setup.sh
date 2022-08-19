@@ -1,12 +1,6 @@
 #!/bin/sh
 
 
-SERVER_URL=192.168.102.253
-POSTGRES_DB_USERNAME=postgres
-POSTGRES_DB_PORT=5432
-POSTGRES_DB_PASSWORD=root
-IdentityAdminRedirectUri=https://videobanking-auth.machbank.com
-
 
 config='
 {
