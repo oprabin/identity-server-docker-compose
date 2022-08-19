@@ -3,10 +3,10 @@
 
 
 
-export SERVER_URL=192.168.102.253
+export SERVER_URL=192.168.25.43
 export POSTGRES_DB_USERNAME=postgres
 export POSTGRES_DB_PORT=5432
-export POSTGRES_DB_PASSWORD=root
+export POSTGRES_DB_PASSWORD=Laxmi@123
 export IdentityAdminRedirectUri=https://videobanking-auth.machbank.com
 
 
