@@ -50,7 +50,7 @@ config='
         "Password": ""
     },
   "SendgridConfiguration": {
-    "ApiKey": "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",
+    "ApiKey": "'${SENDGRID_API_KEY}'",
     "SourceEmail": "paperplate@codentonic.com",
     "SourceName": "PaperPlate Admin"
   },

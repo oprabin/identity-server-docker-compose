@@ -9,6 +9,8 @@ export POSTGRES_DB_PORT=5432
 export POSTGRES_DB_PASSWORD=Laxmi@123
 export IdentityAdminRedirectUri=https://videobanking-auth.machbank.com
 
+export SENDGRID_API_KEY= 
+
 
 
 
@@ -20,4 +22,4 @@ export IdentityAdminRedirectUri=https://videobanking-auth.machbank.com
 
 
 
-docker-compose up
+docker compose up
